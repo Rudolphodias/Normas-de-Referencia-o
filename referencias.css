@@ -1,0 +1,325 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;	
+}
+
+html{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;    
+}
+
+body{
+    background-color:#011c30;   
+}
+
+header{
+    background: linear-gradient(180deg, #28618c, #011c30);    
+    color: rgb(255, 255, 255);
+    align-items: center;  
+    padding: 2em; 
+}
+
+
+.back-menu-nav span{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+
+main{
+    width: 60%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    padding: 2em;
+    background: rgb(255, 255, 255);    
+    color:rgb(15, 15, 45); 
+    position: relative;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #0d5e9c, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 1px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #0d5e9c, 5px 5px 15px 5px rgba(0,0,0,0);
+    overflow: scroll;
+}
+
+main header{
+    background:url("https://biblio.grupoceu.pt/wp-content/media/images/jumbo.jpg") ;
+    background-size: cover;
+    background-position: center; 
+    height: 20vh;    
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+section{
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+h1{
+    font-size: 3rem ;
+    margin-bottom: 1.2rem; 
+    text-transform: uppercase;   
+}
+
+h2{
+    font-size: 2.6rem ;
+    margin-bottom: 1.2rem;
+}
+
+h3{
+    font-size: 2.4rem ;
+    margin-bottom: 1.2rem;
+}
+
+h4{
+    font-size: 2.2rem ;
+    margin-bottom: 1.2rem;
+}
+
+h5{
+    font-size: 2rem ;
+    margin-bottom: 1.2rem;
+}
+
+p{
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #011c30;
+}
+
+
+.ref-conceitos-estilos{
+    border-bottom: 5px solid #011c30;
+    margin-bottom: 3em;
+    
+}
+
+.ref-conceitos-estilos:hover{
+    border-bottom: 5px solid #0d5e9c;
+    color: #0d5e9c;
+}
+
+main header h1{
+    font-weight: 500;
+    text-shadow: -2px -2px 2px rgba(255,255,255,.1), 3px 3px 3px rgba(0,0,0,.5);
+}
+
+.accordion-section{
+    margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.accordion-estilos{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #28618c, #011c30); 
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.accordion-estilos:hover{
+    background: linear-gradient(360deg, #28618c, #011c30); 
+    
+}
+
+.accordion-estilos h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.accordion-estilos .plus, .accordion-estilos .minus{
+    font-size: 2.4rem;
+}
+
+.accordion-grandparent{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    
+}
+
+.accordion-parent{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+   display: none;
+   margin: 0.5rem; 
+   padding: 0.3rem;  
+}
+
+.accordion-header{
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, #28618c, #011c30);  
+}
+
+.accordion-header h4{
+    font-size: 1.6rem; 
+    font-weight: 500;
+}
+
+.accordion-header:hover{
+    background: linear-gradient(180deg, #011c30, #28618c);  
+    
+}
+
+.accordion-body{
+    display: none;
+    padding: 1rem;
+}
+
+.minus{
+    display: none;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.plus{
+    font-weight: 900;
+    font-size: 2rem; 
+   
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.accordion-child{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+}
+
+.accordion-child-header{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: linear-gradient(180deg, #28618c, #011c30);  
+    color: rgb(255, 255, 255);
+    align-items: center;
+    
+}
+
+.accordion-child-header h5{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.accordion-child-header:hover{
+    background: linear-gradient(360deg, #28618c, #011c30);  
+    color: rgb(255, 255, 255);
+}
+
+.accordion-child-body{
+    display: none;
+    padding: 1rem;
+}
+
+.minus-child{
+    display: none;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.plus-child{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.accordion-box{
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #011c30;
+}
+
+.guia-accordion-p{    
+    padding: 1rem;
+    margin: 1rem;
+    color: #011c30;; 
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+    main header h1{
+        font-size: 2.4rem;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main header h1{
+        font-size: 2rem;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    .main-acordeao{
+        width: 95%;
+    }
+
+    .accordion-estilos h4{
+        font-size: 1.4rem;
+    }
+
+    .accordion-header h4{
+        font-size: 1.2rem;
+    }
+
+    .accordion-child-header h5{
+        font-size: 1rem;
+    }
+
+
+    .guia-accordion-p{
+        font-size: 1rem;
+    }
+
+
+    .accordion-box{
+        font-size: 1rem;
+    }
+
+    section article p{
+        font-size: 1rem;
+    }
+}
